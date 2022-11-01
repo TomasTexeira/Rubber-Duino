@@ -6,12 +6,13 @@
 # But...Wath The F#ck is this?:
 We use the dfu-programmer tool to configure the microcontroller that will turn the arduino into a HID device.
 Then, the only thing left would be to upload the program with the instructions to be executed on the victim machine.
+And... Voila, you have a Rubber-Ducky made with Arduino.
 ### List
 - Arduino x1
 - USB cable x1
 - DuPont wire x1
 
-# Supported Chips:
+# Dfu-Programmer Supported Chips:
 ### **8051 based controllers**:
 at89c51snd1c, at89c51snd2c, at89c5130, at89c5131, at89c5132
 
