@@ -7,7 +7,7 @@
 We use the dfu-programmer tool to configure the microcontroller that will turn the arduino into a HID device.
 Then, the only thing left would be to upload the program with the instructions to be executed on the victim machine.
 And... Voila, you have a Rubber-Ducky made with Arduino.
-### List
+# List
 - Arduino x1
 - USB cable x1
 - DuPont wire x1
@@ -24,3 +24,7 @@ at32uc3a0128, at32uc3a1128, at32uc3a0256, at32uc3a1256, at32uc3a0512, at32uc3a15
 
 ### **XMEGA based controllers**:
 atxmega64a1u, atxmega128a1u, atxmega64a3u, atxmega128a3u, atxmega192a3u, atxmega256a3u, atxmega16a4u, atxmega32a4u, atxmega64a4u, atxmega128a4u, atxmega256a3bu, atxmega64b1, atxmega128b1, atxmega64b3, atxmega128b3, atxmega64c3, atxmega128c3, atxmega256c3, atxmega384c3, atxmega16c4, atxmega32c4
+
+# Installation:
+- First we will have to install the dfu-programmer tool.
+`sudo apt install dfu-programmer`
