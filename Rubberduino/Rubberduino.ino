@@ -45,10 +45,7 @@
 
 uint8_t buf[8] = { 0 }; /* Keyboard report buffer */
 
-/*Some example functions*/
-void auth_key();
-void download_from_localhost();
-
+void setup();
 void loop();
 void STRING(char *);
 void DELAY(unsigned t);
@@ -59,31 +56,48 @@ void CTRL_ALT_DEL();
 void ALT_F2();
 void TAB();
 
-// Comment out the function you don't want to use
-
-/*void download_from_localhost() {
-    // Here the code.
-}*/
-
-void auth_key() {
+void setup() {
   Serial.begin(9600);
   delay(200);
 
+  /**/
+  //----------Void auth key, sigin in your google account----------
   DELAY(1000);
   WINDOWS("r");
-  DELAY(100);
+  DELAY(1000);
   STRING("chrome.exe");
   ENTER();
-  DELAY(100);
+  DELAY(1000);
   STRING("https://accounts.google.com/");
   ENTER();
-  DELAY(100);
+  DELAY(1000);
   STRING("EMAIL");
   ENTER();
-  DELAY(100);
+  DELAY(1000);
   STRING("PASS");
-  ENTER(); 
-}
+  ENTER();
+  //---------------------------------------------------------------
+
+//or
+
+  //--------------Void download_from_localhost-------------------
+  DELAY(1000);
+  WINDOWS("r");
+  DELAY(1000);
+  STRING("chrome.exe");
+  ENTER();
+  DELAY(1000);
+  STRING("local host or url from python");
+  ENTER();
+  DELAY(1000);
+  TAB();
+  ENTER();
+  DELAY(1000);
+  STRING("continue.....");
+  ENTER();
+  //-------------------------------------------------------------
+  }
+
   void loop() {
 
   }
@@ -93,7 +107,7 @@ void auth_key() {
     buf[2] = KEY_F2;
 
     Serial.write(buf, 8);       // Send keypress
-    buf[0] = 0;
+    buf[0] = 0; //clear memory
     buf[2] = 0;
     Serial.write(buf, 8);
   }
