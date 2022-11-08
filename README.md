@@ -25,6 +25,22 @@ at32uc3a0128, at32uc3a1128, at32uc3a0256, at32uc3a1256, at32uc3a0512, at32uc3a15
 ### **XMEGA based controllers**:
 atxmega64a1u, atxmega128a1u, atxmega64a3u, atxmega128a3u, atxmega192a3u, atxmega256a3u, atxmega16a4u, atxmega32a4u, atxmega64a4u, atxmega128a4u, atxmega256a3bu, atxmega64b1, atxmega128b1, atxmega64b3, atxmega128b3, atxmega64c3, atxmega128c3, atxmega256c3, atxmega384c3, atxmega16c4, atxmega32c4
 
+# Boot:
+## **Arduino-COMBINED-dfu-usbserial-atmega16u2-Uno-Rev3.hex**:
+### **DOC**:
+- https://arduino.stackexchange.com/questions/1048/whats-the-difference-relationship-between-arduino-and-avr
+## **Arduino-keyboard-0.3.hex**:
+- https://github.com/coopermaa/USBKeyboard
+
 # Installation:
-- First we will have to install the dfu-programmer tool.
+- First we will have to install the dfu-programmer tool.\
 `sudo apt install dfu-programmer`
+- Install Arduino IDE.
+- Clone the project:\
+`git clone https://github.com/TomasTexeira/Rubber-Duino.git`
+- Execute permissions:\
+`cd Rubber-Duino`\
+`chmod +x script.sh`
+- Important! run the script with `sudo`\
+`sudo ./script.sh`
+- Follow the instructions.
