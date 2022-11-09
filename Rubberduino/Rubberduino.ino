@@ -47,6 +47,7 @@ uint8_t buf[8] = { 0 }; /* Keyboard report buffer */
 
 void setup();
 void loop();
+
 void STRING(char *);
 void DELAY(unsigned t);
 void CTRL_ALT(char *c);
@@ -67,13 +68,13 @@ void setup() {
   DELAY(1000);
   STRING("chrome.exe");
   ENTER();
-  DELAY(1000);
-  STRING("https://accounts.google.com/");
+  DELAY(3000);
+  STRING("accounts.google.com/");
   ENTER();
-  DELAY(1000);
-  STRING("EMAIL");
+  DELAY(3000);
+  STRING("email.email not email.email@email.com");
   ENTER();
-  DELAY(1000);
+  DELAY(6000);
   STRING("PASS");
   ENTER();
   //---------------------------------------------------------------
@@ -81,20 +82,19 @@ void setup() {
 //or
 
   //--------------Void download_from_localhost-------------------
-  DELAY(1000);
+  /*DELAY(1000);
   WINDOWS("r");
   DELAY(1000);
   STRING("chrome.exe");
   ENTER();
   DELAY(1000);
-  STRING("local host or url from python");
+  STRING("localhost:8080");
   ENTER();
   DELAY(1000);
   TAB();
   ENTER();
-  DELAY(1000);
-  STRING("continue.....");
-  ENTER();
+  coming soon
+  */
   //-------------------------------------------------------------
   }
 
