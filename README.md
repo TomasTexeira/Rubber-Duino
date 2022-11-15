@@ -28,6 +28,8 @@ atxmega64a1u, atxmega128a1u, atxmega64a3u, atxmega128a3u, atxmega192a3u, atxmega
 # Boot:
 ## **Arduino-COMBINED-dfu-usbserial-atmega16u2-Uno-Rev3.hex**:
 ### **DOC**:
+
+
 - https://arduino.stackexchange.com/questions/1048/whats-the-difference-relationship-between-arduino-and-avr
 ## **Arduino-keyboard-0.3.hex**:
 - https://github.com/coopermaa/USBKeyboard
@@ -44,3 +46,4 @@ atxmega64a1u, atxmega128a1u, atxmega64a3u, atxmega128a3u, atxmega192a3u, atxmega
 - Important! run the script with `sudo`\
 `sudo ./script.sh`
 - Follow the instructions.
+![arduino_r3_image](https://user-images.githubusercontent.com/66860132/202038810-77c6b9db-0bdc-41b4-8d67-0ea0bbfb1aa7.png)
