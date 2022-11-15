@@ -46,4 +46,8 @@ atxmega64a1u, atxmega128a1u, atxmega64a3u, atxmega128a3u, atxmega192a3u, atxmega
 - Important! run the script with `sudo`\
 `sudo ./script.sh`
 - Follow the instructions.
+
+# Script.sh instructions:
+- `echo ARDUINO UNO into your PC with the two pins connected.`
+### Image:
 ![arduino_r3_image](https://user-images.githubusercontent.com/66860132/202038810-77c6b9db-0bdc-41b4-8d67-0ea0bbfb1aa7.png)
